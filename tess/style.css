@@ -1,0 +1,308 @@
+? cái trang mẫu của nó như này cơ mà thấy cái phần gợi ý ở bên phải chưa và cái thành scroll ở bên phải màn hình cơ hiểu ko 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram UI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6aac58368b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2 class="logo">Instagram</h2>
+            <div class="category">
+                <ul>
+                    <div class="sb home">
+                        <div class="icons">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <li>Trang chủ</li>
+                    </div>
+                    <div class="sb">
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <li>Tìm kiếm</li>
+                    </div>
+                    <div class="sb">
+                        <div class="icons">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <li>Khám phá</li>
+                    </div>
+                    <div class="sb">
+                        <div class="icons">
+                            <i class="fa-solid fa-clapperboard"></i>
+                        </div>
+                        <li>Reels</li>
+                    </div>
+                    <div class="sb">
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </div>
+                        <li>Tin nhắn</li>
+                    </div>
+                    <div class="sb">
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <li>Thông báo</li>
+                    </div>
+                    <div class="sb">
+                        <div class="icons">
+                            <i class="fa-regular fa-square-plus"></i>
+                        </div>
+                        <li>Tạo</li>
+                    </div>
+                    <div class="sb pp">
+                        <div class="icons">
+                            <img src="1.jpg" alt="">
+                        </div>
+                        <li>Trang cá nhân</li>
+                    </div>
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <main class="content">
+            <div class="stories">
+                <div class="username">
+                    <div class="story">User 1</div>
+                </div>
+                <div class="username">
+                    <div class="story">User 1</div>
+                </div>
+                <div class="username">
+                    <div class="story">User 1</div>
+                </div>
+                <div class="username">
+                    <div class="story">User 1</div>
+                </div>
+                <div class="username">
+                    <div class="story">User 1</div>
+                </div>
+                <div class="username">
+                    <div class="story">User 1</div>
+                </div>
+                <div class="username">
+                    <div class="story">User 1</div>
+                </div>
+                <div class="username">
+                    <div class="story">User 1</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <h3>tin.tr_20s</h3>
+                    <span>3 phút trước</span>
+                </div>
+                <div class="post-image">CapCut Video</div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <h3>user123</h3>
+                    <span>5 phút trước</span>
+                </div>
+                <div class="post-image">Hình ảnh</div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <h3>linh.99</h3>
+                    <span>10 phút trước</span>
+                </div>
+                <div class="post-image">Bức ảnh đẹp</div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <h3>an.tran</h3>
+                    <span>15 phút trước</span>
+                </div>
+                <div class="post-image">Khoảnh khắc tuyệt vời</div>
+            </div>
+        </main>
+
+      <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <h3>Gợi ý cho bạn</h3>
+            <ul>
+                <li>zuongpeach <button>Theo dõi</button></li>
+                <li>ynhyz_05 <button>Theo dõi</button></li>
+                <li>_nat.nee_ <button>Theo dõi</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: block;
+    width: 100%;  
+}
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100vh;
+    background: #000000;
+    color: white;
+    padding: 20px;
+    border: 1px solid rgb(67, 67, 96);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+.sidebar h2 {
+    font-family: 'Pacifico', cursive;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.home{
+    font-weight: bold;
+}
+.sb{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 250px;
+    height: 55px;
+    font-size: 15px;
+    font-family:'Proxima Nova', Arial, Helvetica, sans-serif;
+    padding: 10px 0px;
+}
+.sb:hover {
+    background-color: gray;
+    transition: background 0.3s ease;
+}
+.pp img {
+    border-radius: 50%;
+    max-width: 20px;
+    max-height: 20px;
+}
+.icons{
+    height: 30px;
+    font-size: 20px;
+    margin-right: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.content {
+    background-color: black;
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+}
+.stories {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 10px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.story {
+    width: 60px;
+    height: 60px;
+    background: gray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+}
+
+.post {
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.post-image {
+    background: black;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: white;
+}
+.right-sidebar {
+    width: 250px;
+    padding: 20px;
+    position: relative; /* hoặc bỏ luôn dòng này */
+    right: 0;
+    height: auto; /* Cho phép chiều cao thay đổi */
+    background: #111;
+    color: white;
+}
+.right-sidebar ul {
+    list-style: none;
+}
+.right-sidebar ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: darkblue;
+}
+@media (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content {
+        margin-left: 220px;
+    }
+    .right-sidebar {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+sửa lại cho đúng bản mẫu đi
